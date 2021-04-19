@@ -9,6 +9,8 @@ if ( ! function_exists( 'quadrat_support' ) ) :
 				'/assets/theme.css',
 			)
 		);
+
+		remove_theme_support( 'block-templates' );
 	}
 	add_action( 'after_setup_theme', 'quadrat_support' );
 endif;
